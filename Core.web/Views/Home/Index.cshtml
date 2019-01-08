@@ -1,8 +1,36 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript">
+    $(function () {
+        load();
+    })
+    function load() {
+        $.ajax({
+            url: "home/AddUser",
+            type: "get",
+            dataType: "json",
+            succeed: function (data) {
+                console.log(data);
+            }
+        });
+    }
+</script>
+<div>
+   <table class="table">
+       <thead>
+           <th>序号</th>
+           <th>姓名</th>
+           <th>登陆账号</th>
+           <th>密码</th>
+       </thead>
+       <tbody>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+       </tbody>
+       <tfoot>
+           
+       </tfoot>
+   </table>
+    <input type="button" id="add" onclick="load()"/>
 </div>

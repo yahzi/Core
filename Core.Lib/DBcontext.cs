@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Core.Lib.Model;
+﻿using Core.Lib.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace Core.Lib
 {
-    public class DBcontext :DbContext
+    public class DBcontext : DbContext
     {
-        public DBcontext()
+        public DBcontext(DbContextOptions<DBcontext> options) : base(options)
         {
         }
 
-        DbSet<User> User;
+        public DbSet<User> User { get; set; }
     }
 }
