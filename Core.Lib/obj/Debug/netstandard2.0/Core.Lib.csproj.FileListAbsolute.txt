@@ -1,0 +1,9 @@
+D:\self\donet.core\three\Core\Core.Lib\bin\Debug\netstandard2.0\Core.Lib.deps.json
+D:\self\donet.core\three\Core\Core.Lib\bin\Debug\netstandard2.0\Core.Lib.dll
+D:\self\donet.core\three\Core\Core.Lib\bin\Debug\netstandard2.0\Core.Lib.pdb
+D:\self\donet.core\three\Core\Core.Lib\obj\Debug\netstandard2.0\Core.Lib.csprojAssemblyReference.cache
+D:\self\donet.core\three\Core\Core.Lib\obj\Debug\netstandard2.0\Core.Lib.csproj.CoreCompileInputs.cache
+D:\self\donet.core\three\Core\Core.Lib\obj\Debug\netstandard2.0\Core.Lib.AssemblyInfoInputs.cache
+D:\self\donet.core\three\Core\Core.Lib\obj\Debug\netstandard2.0\Core.Lib.AssemblyInfo.cs
+D:\self\donet.core\three\Core\Core.Lib\obj\Debug\netstandard2.0\Core.Lib.dll
+D:\self\donet.core\three\Core\Core.Lib\obj\Debug\netstandard2.0\Core.Lib.pdb
