@@ -1,0 +1,8 @@
+D:\github\core_one\Core\Core.Common\bin\Debug\netstandard2.0\Core.Common.deps.json
+D:\github\core_one\Core\Core.Common\bin\Debug\netstandard2.0\Core.Common.dll
+D:\github\core_one\Core\Core.Common\bin\Debug\netstandard2.0\Core.Common.pdb
+D:\github\core_one\Core\Core.Common\obj\Debug\netstandard2.0\Core.Common.csproj.CoreCompileInputs.cache
+D:\github\core_one\Core\Core.Common\obj\Debug\netstandard2.0\Core.Common.AssemblyInfoInputs.cache
+D:\github\core_one\Core\Core.Common\obj\Debug\netstandard2.0\Core.Common.AssemblyInfo.cs
+D:\github\core_one\Core\Core.Common\obj\Debug\netstandard2.0\Core.Common.dll
+D:\github\core_one\Core\Core.Common\obj\Debug\netstandard2.0\Core.Common.pdb

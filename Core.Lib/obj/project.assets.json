@@ -752,6 +752,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "Core.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Core.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Common.dll": {}
+        }
       }
     }
   },
@@ -3060,10 +3070,16 @@
         "system.threading.tasks.4.0.11.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Core.Common/1.0.0": {
+      "type": "project",
+      "path": "../Core.Common/Core.Common.csproj",
+      "msbuildProject": "../Core.Common/Core.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Core.Common >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -3097,7 +3113,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\github\\core_one\\Core\\Core.Common\\Core.Common.csproj": {
+              "projectPath": "D:\\github\\core_one\\Core\\Core.Common\\Core.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

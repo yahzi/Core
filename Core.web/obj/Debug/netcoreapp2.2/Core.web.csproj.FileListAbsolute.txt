@@ -35,7 +35,11 @@ D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.web.dll
 D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.web.pdb
 D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.web.Views.dll
 D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.web.Views.pdb
+D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.Agent.dll
+D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.Common.dll
 D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.Lib.dll
+D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.Agent.pdb
+D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.Common.pdb
 D:\github\core_one\Core\Core.web\bin\Debug\netcoreapp2.2\Core.Lib.pdb
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Core.web.csprojAssemblyReference.cache
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Core.web.csproj.CoreCompileInputs.cache
@@ -46,6 +50,7 @@ D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Core.web.AssemblyInfo.c
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Core.web.TagHelpers.input.cache
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Core.web.TagHelpers.output.cache
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Core.web.RazorCoreGenerate.cache
+D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Razor\Areas\User\Views\User\Indexe.g.cshtml.cs
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 D:\github\core_one\Core\Core.web\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs

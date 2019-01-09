@@ -1,0 +1,14 @@
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Agent.deps.json
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Agent.dll
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Agent.pdb
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Common.dll
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Lib.dll
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Common.pdb
+D:\github\core_one\Core\Core.Agent\bin\Debug\netstandard2.0\Core.Lib.pdb
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.csprojAssemblyReference.cache
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.csproj.CoreCompileInputs.cache
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.AssemblyInfoInputs.cache
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.AssemblyInfo.cs
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.csproj.CopyComplete
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.dll
+D:\github\core_one\Core\Core.Agent\obj\Debug\netstandard2.0\Core.Agent.pdb

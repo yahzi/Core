@@ -9,15 +9,24 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
   </ItemGroup>
 
 
   <ItemGroup>
+    <Folder Include="Areas\Sys_User\Controllers\" />
+    <Folder Include="Areas\Sys_User\Data\" />
+    <Folder Include="Areas\Sys_User\Models\" />
+    <Folder Include="Areas\Sys_User\Views\" />
+    <Folder Include="Areas\User\Data\" />
+    <Folder Include="Areas\User\Models\" />
     <Folder Include="DataAccess\" />
   </ItemGroup>
 
 
   <ItemGroup>
+    <ProjectReference Include="..\Core.Agent\Core.Agent.csproj" />
+    <ProjectReference Include="..\Core.Common\Core.Common.csproj" />
     <ProjectReference Include="..\Core.Lib\Core.Lib.csproj" />
   </ItemGroup>
 

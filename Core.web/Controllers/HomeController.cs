@@ -43,12 +43,12 @@ namespace Core.web.Controllers
         {
             Lib.Model.User us = new Lib.Model.User();
             
-            us.UserName = "Xz";
-            us.UserAccount = "xuzhi";
-            us.UserPassword = "123456";
+            //us.UserName = "Xz";
+            //us.UserAccount = "xuzhi";
+            //us.UserPassword = "123456";
 
-            _dbContext.User.Add(us);
-            _dbContext.SaveChanges();
+            //_dbContext.User.Add(us);
+            //_dbContext.SaveChanges();
 
             
             return Json(new { data = "ok" });

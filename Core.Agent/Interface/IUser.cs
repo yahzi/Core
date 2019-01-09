@@ -1,9 +1,9 @@
 ﻿using Core.Lib.Model;
 using System.Collections.Generic;
 
-namespace Core.Lib.Interface
+namespace Core.Agent.Interface
 {
-    interface I_User
+    public interface IUser
     {
         List<User> GetUserList();
 

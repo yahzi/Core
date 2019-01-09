@@ -1,13 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿
 namespace Core.Lib.Model
 {
-    public class User
+    public class User : BaseModel
     {
-        [Key]
-        public int PKID { get; set; }
         public string UserName { get; set; }
-        public string UserAccount { get; set; }
-        public string UserPassword { get; set; }
+        public string LoginAccount { get; set; }
+        public string LoginPassword { get; set; }
+        public int OnFreezed { get; set; }
+        public int IsInternal { get; set; }
     }
 }

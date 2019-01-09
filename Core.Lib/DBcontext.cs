@@ -10,5 +10,12 @@ namespace Core.Lib
         }
 
         public DbSet<User> User { get; set; }
+        public DbSet<Sys_User> Sys_User { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>().ToTable("User");
+            modelBuilder.Entity<Sys_User>().ToTable("Sys_User");
+        }
     }
 }

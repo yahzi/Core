@@ -1,0 +1,165 @@
+﻿
+@{
+    ViewData["Title"] = "Indexe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    用户ID
+                </th>
+                <th>
+                    用户姓名
+                </th>
+                <th>
+                    登陆账号
+                </th>
+                <th>
+                    密码
+                </th>
+                <th>
+                    是否冻结
+                </th>
+                <th>
+                    是否内部账号
+                </th>
+                <th>
+                    是否有效
+                </th>
+                <th>
+                    创建时间
+                </th>
+                <th>
+                    最后修改时间
+                </th>
+                <th>
+                    操作
+                </th>
+            </tr>
+        </thead>
+        <tbody id="body">
+            @foreach (var item in ViewBag.data)
+            {
+            <tr>
+                <td>
+                    @item.PKID
+                </td>
+                <td>
+                    @item.UserName
+                </td>
+                <td>
+                    @item.LoginAccount
+                </td>
+                <td>
+                    @item.LoginPassword
+                </td>
+
+                @if (item.OnFreezed == 1)
+                {
+                    <td>
+                        是
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        否
+                    </td>
+                }
+
+                @if (item.IsInternal == 1)
+                {
+                    <td>
+                        是
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        否
+                    </td>
+                }
+
+                @if (item.Valid == 1)
+                {
+                    <td>
+                        是
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        否
+                    </td>
+                }
+                <td>
+                    @item.CreateTime
+                </td>
+                <td>
+                    @item.LastModifyTime
+                </td>
+                <td>
+                    <input type="button" class="btn btn-success btn-xs" value="Create" onclick="Create(@item.PKID)" />|
+                    <input type="button" class="btn btn-success btn-xs" value="Update" onclick="Update(@item.PKID)" />|
+                    <input type="button" class="btn btn-success btn-xs" value="Delete" onclick="Delete(@item.PKID)" />
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+    function GetUserList() {
+        $.ajax({
+            url: "user/GetUserList",
+            type: "get",
+            dataType: "json",
+            success: function (data) {
+                var html = "";
+                for (var i = 0; i < data.data.length; i++) {
+                    html += "<tr>";
+                    html += "<td>" + data.data[i].pkid + "</td>";
+                    html += "<td>" + data.data[i].userName + "</td>";
+                    html += "<td>" + data.data[i].loginAccount + "</td>";
+                    html += "<td>" + data.data[i].loginPassword + "</td>";
+                    html += "<td>" + data.data[i].onFreezed + "</td>";
+                    html += "<td>" + data.data[i].isInternal + "</td>";
+                    html += "<td>" + data.data[i].valid + "</td>";
+                    html += "<td>" + data.data[i].createTime + "</td>";
+                    html += "<td>" + data.data[i].lastModifyTime + "</td>";
+                    html += "<td>";
+                    html += "<input type='button' class='btn btn-success btn-xs' value='Create' onclick='Create(" + data.data[i].pkid + ")' />|";
+                    html += "<input type='button' class='btn btn-success btn-xs' value='Update' onclick='Update(" + data.data[i].pkid + ")' />|";
+                    html += "<input type='button' class='btn btn-success btn-xs' value='Delete' onclick='Delete(" + data.data[i].pkid + ")' />";
+                    html += "</td>";
+                    html += "</tr>";
+                }
+                $("#body").append(html);
+            }
+        });
+    }
+    function Delete(Id) {
+        $.ajax({
+            url: "user/Delete",
+            type: "post",
+            dataType: "json",
+            data: {
+                id: Id
+            },
+            success: function (data) {
+                console.log(data);
+                //GetUserList();
+                window.location.reload();
+            }
+        });
+    }
+</script>
+<script src="~/lib/jquery/dist/jquery.js"></script>

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Core.Lib;
+﻿using Core.Lib;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
 
 namespace Core.web
 {
@@ -34,15 +30,17 @@ namespace Core.web
             });
 
             //add EF dependency
-            var connection = "server=.;uid=sa;pwd=#Bn,K2,Rx,;database=codefirst";
+            var connection = "server=.;uid=sa;pwd=#Bn,K2,Rx,;database=first";
             services.AddDbContext<DBcontext>(options => options.UseSqlServer(connection));
-            
+
+            services.AddTransient<Agent.Interface.IUser, Agent.Service.UserService>();
+            services.AddTransient<Agent.Interface.ISys_User, Agent.Service.Sys_UserService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, DBcontext dBcontext)
         {
             if (env.IsDevelopment())
             {
@@ -61,10 +59,19 @@ namespace Core.web
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+
+                //routes.MapRoute(
+                //    name: "default",
+                //    template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapAreaRoute(
+                    name: "AreaRoute",
+                    areaName: "User",
+                    template: "{controller=User}/{action=Indexe}/{id?}"
+                    );
             });
+            
+            //DbInit.InitDB(dBcontext);
         }
     }
 }
